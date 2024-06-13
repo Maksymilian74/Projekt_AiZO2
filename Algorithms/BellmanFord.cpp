@@ -73,14 +73,14 @@ void BellmanFord::runIncidenceMatrix(const IncidenceMatrix &graph, int startVert
         }
     }
 
-//    cout << "Wierzcholek\t Odleglosc\tSciezka";
-//    if (dist[endVertex] != numeric_limits<int>::max()) {
-//        cout << "\n" << startVertex << " -> " << endVertex << " \t\t " << dist[endVertex] << "\t\t" << startVertex << " ";
-//        printPath(parent, endVertex);
-//    } else {
-//        cout << "\nBrak sciezki " << startVertex << " do " << endVertex;
-//    }
-//    cout << endl;
+    cout << "Wierzcholek\t Odleglosc\tSciezka";
+    if (dist[endVertex] != numeric_limits<int>::max()) {
+        cout << "\n" << startVertex << " -> " << endVertex << " \t\t " << dist[endVertex] << "\t\t" << startVertex << " ";
+        printPath(parent, endVertex);
+    } else {
+        cout << "\nBrak sciezki " << startVertex << " do " << endVertex;
+    }
+    cout << endl;
 
     delete[] dist;
     delete[] parent;

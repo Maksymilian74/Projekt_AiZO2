@@ -64,14 +64,14 @@ void Dijkstra::runIncidenceMatrix(const IncidenceMatrix &graph, int startVertex,
         }
     }
 
-//    cout << "Wierzcholek\t Odleglosc\tSciezka";
-//    for (int i = 0; i < vertices; i++) {
-//        if (i == endVertex) {
-//            cout << "\n" << startVertex << " -> " << i << " \t\t " << dist[i] << "\t\t" << startVertex << " ";
-//            printPath(parent, i);
-//        }
-//    }
-//    cout << endl;
+    cout << "Wierzcholek\t Odleglosc\tSciezka";
+    for (int i = 0; i < vertices; i++) {
+        if (i == endVertex) {
+            cout << "\n" << startVertex << " -> " << i << " \t\t " << dist[i] << "\t\t" << startVertex << " ";
+            printPath(parent, i);
+        }
+    }
+    cout << endl;
 
     delete[] dist;
     delete[] sptSet;
